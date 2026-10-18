@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; style-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'; frame-src 'none'; script-src 'none'"
+    />
+    <title>B站视频过滤器 · 隐私政策</title>
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <article class="policy-card" aria-labelledby="policy-title">
+        <header class="brand-header">
+          <div class="brand-mark" aria-hidden="true">B</div>
+          <div>
+            <p class="brand-name">B站视频过滤器</p>
+            <p class="brand-subtitle">隐私政策</p>
+          </div>
+        </header>
+
+        <div class="policy-body">
+          <h1 id="policy-title">隐私政策</h1>
+          <p class="policy-meta">生效日期：2026 年 8 月 10 日</p>
+
+          <section>
+            <h2>一、这个插件是做什么的</h2>
+            <p>
+              B站视频过滤器是一款 Chrome 插件，帮助你在 B 站首页、搜索结果和 UP 主主页，按标题关键词、作者名单等规则过滤不想看到的视频。账号服务仅用于注册、登录、找回密码以及确认试用和订阅状态。
+            </p>
+          </section>
+
+          <section>
+            <h2>二、我们收集哪些信息</h2>
+            <ul>
+              <li><strong>账号信息：</strong>你设置的账号名（非真实姓名）；密码仅以 Argon2id 哈希值存储，我们不保存、也无法还原你的明文密码。</li>
+              <li><strong>手机号：</strong>用于注册、短信登录、找回密码和账号安全验证。手机号使用 AES-256-GCM 加密存储，并保存不可逆摘要用于账号查找和防止重复注册；插件内仅展示脱敏手机号（如 138****1234）。</li>
+              <li><strong>短信验证与安全记录：</strong>我们会保存手机号摘要、验证码用途、发送 IP 地址、发送日期和次数、验证失败次数、有效期及使用状态，用于完成验证和防止恶意刷取。验证码明文不会保存在我们的数据库中。</li>
+              <li><strong>登录凭证：</strong>服务器只保存登录令牌的哈希值；插件仅在你自己的浏览器本地（chrome.storage.local）保存登录令牌原文和脱敏后的账号信息，用于保持登录状态。</li>
+              <li><strong>试用与订阅状态：</strong>试用起止时间、订阅到期时间，用于判断过滤功能是否可用。</li>
+              <li><strong>支付信息：</strong>你发起付费时，我们会保存本地订单号、支付平台订单号和交易号、支付金额、币种、状态、二维码有效期、支付时间及授权到期时间，用于创建订单、核实到账、处理异常订单和发放使用权。我们不会接触或存储你的银行卡号、微信账号或微信支付密码。</li>
+              <li><strong>反馈信息：</strong>当你主动打开飞书表单并提交反馈时，飞书会处理你填写的反馈内容，以及你自愿填写的联系方式。插件只负责打开公开表单，不会读取、转发或另行保存表单内容。</li>
+              <li><strong>基础安全日志：</strong>当你访问账号、支付或隐私政策服务时，服务器或反向代理可能处理 IP 地址、访问时间、请求路径和响应状态等基础日志，用于服务安全、限流和故障排查，不用于广告画像。</li>
+              <li><strong>过滤规则：</strong>你设置的关键词黑白名单，只保存在你自己的浏览器本地，不会上传到服务器。</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>三、浏览器权限与 B 站页面处理</h2>
+            <ul>
+              <li><strong>storage 权限：</strong>用于在浏览器本地保存过滤规则、插件设置、登录凭证和脱敏账号信息。</li>
+              <li><strong>B 站站点访问权限：</strong>用于读取页面中已经展示的视频标题和 UP 主名称，并根据你的本地规则隐藏对应页面元素。插件不会调用或拦截 B 站接口，也不会将这些页面内容上传到我们的服务器。</li>
+              <li><strong>配套服务访问权限：</strong>仅用于连接本插件的账号与支付服务，完成注册登录、短信验证、订阅状态查询和支付流程。</li>
+              <li><strong>外部页面：</strong>隐私政策、支付页面和飞书反馈表单只会在你主动点击对应入口时打开。</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>四、第三方服务与信息共享</h2>
+            <ul>
+              <li><strong>阿里云短信：</strong>当你获取或校验短信验证码时，我们会向阿里云提供手机号、国家或地区代码、短信签名、短信模板信息、验证码及相关验证参数，用于注册、短信登录和找回密码。上述信息不用于广告。</li>
+              <li><strong>第三方微信支付服务：</strong>当你主动发起微信支付时，我们会向支付服务商提供订单号、支付金额、商品说明、支付结果通知地址和返回地址，用于生成微信支付二维码及处理支付结果。我们不会向支付服务商提供你的账号密码或手机号。</li>
+              <li><strong>飞书：</strong>当你主动提交反馈时，反馈内容由飞书多维表格表单接收和保存；我们会在处理反馈所需的范围内查看你提交的内容。</li>
+            </ul>
+            <p>
+              我们仅在完成短信验证、支付和用户主动提交反馈所必需的范围内，向上述服务商提供或允许其处理必要信息。我们不会出售个人信息，也不会将信息用于第三方广告投放或用户画像。
+            </p>
+          </section>
+
+          <section>
+            <h2>五、我们不会做的事</h2>
+            <ul>
+              <li>不采集你的 B 站账号、B 站登录状态、观看记录或浏览历史。</li>
+              <li>不读取或上传你在其他网站上的页面内容。</li>
+              <li>不使用第三方广告或数据分析 SDK，不进行跨站跟踪或用户画像。</li>
+              <li>不会超出本政策所述目的，向无关第三方提供你的个人信息。</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>六、数据保护与保留期限</h2>
+            <ul>
+              <li>密码使用 Argon2id 哈希存储，手机号使用 AES-256-GCM 加密存储，登录令牌和一次性支付令牌在服务器仅保存哈希值；插件与服务器之间通过 HTTPS 通信。</li>
+              <li>过滤规则和插件设置保存在浏览器本地，直到你主动清除插件数据或卸载插件。</li>
+              <li>已过期或已撤销的登录会话，以及短信验证和限流记录，会在达到清理条件后保留约 30 天并由系统定期删除。</li>
+              <li>账号、试用、订阅和支付订单数据会在提供服务、处理支付争议和履行必要合规义务所需的期限内保存。账号删除申请处理后，除依法或为解决支付争议必须保留的信息外，其余账号数据会被删除或匿名化。</li>
+              <li>阿里云短信服务、第三方微信支付服务和飞书对相关数据的保存，适用其各自的隐私政策和服务规则。</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>七、你的权利</h2>
+            <p>
+              你可以随时在插件内退出登录、修改密码，或通过清除插件数据和卸载插件删除浏览器本地数据。如需查询、更正或删除账号、支付或反馈数据，请通过下方邮箱联系我们。为保护账号安全，我们可能在处理请求前核验你的身份，并会在合理时间内完成处理或说明无法删除的必要信息及原因。
+            </p>
+          </section>
+
+          <section>
+            <h2>八、政策更新</h2>
+            <p>
+              如果我们对数据处理方式做出实质性变更，会在插件更新说明和本页面中同步告知，建议定期查看本页面以了解最新版本。
+            </p>
+          </section>
+
+          <div class="policy-note">
+            如对本政策有任何疑问，或需要查询、更正、删除你的账号数据，请联系：<strong>1584238099@qq.com</strong>
+          </div>
+        </div>
+
+        <footer>
+          <p>本政策适用于「B站视频过滤器」Chrome 插件及其配套账号服务。</p>
+        </footer>
+      </article>
+    </main>
+  </body>
+</html>
